@@ -1,0 +1,136 @@
+body{
+    font-family:"Roboto",sans-serif;
+}
+.one {
+    background-color: #990866;
+    width: 100%;
+  }
+  
+.one .article {
+    width: calc((100% - 60px) / 3);
+    height: 360px;
+    background-color: aqua;
+    box-sizing:border-box;
+    margin:10px;
+    float: left;
+}
+.primary{
+    background-color: rgb(81, 125, 177);
+    color:white;
+    border:none;    
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.secondary{
+    background-color: rgb(1, 115, 255);
+    color:white;
+    border:none;    
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.success{
+    background-color: rgb(66, 204, 158);
+    color:white;
+    border:none;    
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.info {
+    background-color: rgb(56, 89, 197);
+    color:white;
+    border:none;    
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.warning{
+    background-color: rgb(241, 170, 76);
+    color:white;
+    border:none;    
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.danger{
+    background-color: rgb(233, 82, 36);
+    color:white;
+    border:none;    
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.dark{
+    background-color: rgb(32, 32, 32);
+    color:white;
+    border:none;    
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.three{
+    width:50vw;
+}
+.three button{
+    float:right;
+}
+.form-control{
+    display: block;
+    margin:10px 0px;
+    width: 100%;
+    padding:5px 0px;
+    font-weight: 500;
+}
+
+.clear{
+    clear:both;
+}
+.ratio-16x9{
+    aspect-ratio: 16/9;
+}
+
+.table{
+    width:100%;
+    padding:20px;
+    border-collapse: separate;
+    border-spacing: 0 8px; 
+}
+
+.table th,td{
+    text-align: left; 
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+}
+
+
+.table td a {
+    text-decoration: none;
+    color:rgb(18, 194, 141);
+}
+
+.table-striped{
+    width:100%;
+    border-collapse: separate;
+    border-spacing: 0 0px; 
+}
+
+.table-striped tr:nth-child(even){
+    background-color: #dfdfdf;
+}
+.table-striped th,td{
+    text-align: left; 
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px 20px;
+}
+
+
+
