@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #b9b9b9;
+    margin: 0px;
+    font-family:"Roboto",sans-serif;
+}
+.design4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding :20px;
+    justify-content: space-around;
+
+    .card{
+        background-color:#fff;
+        padding:20px;
+        width:500px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 2px rgba(65, 65, 65, 0.5);
+
+        i {
+            background-color: rgb(89, 182, 182);
+            padding:10px;
+            color:#e9e9e9;
+            border-radius: 10px;;
+        }
+
+        button {
+            width: 100%;
+            background-color: rgb(89, 182, 182);
+            padding:10px;
+            color:#e9e9e9;
+            border-radius: 5px;
+            font-weight: bold;
+            border:none;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(131, 219, 219);
+        }
+    }
+
+    .right{
+        text-align: right;
+    }
+
+    .center{
+        text-align: center;
+    }
+}
+
+.design5{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .employeeCard{
+        background-color: #fff;
+        box-shadow: 1px 2px 3px rgba(65, 65, 65, 0.5);
+        width: 450px;
+        .cardHeader {
+            padding:5px 20px;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #c5c5c5;
+        }
+
+        .cardMain{
+            padding:10px;
+            text-align:center;
+            img {
+                border-radius:50%;
+            }
+            border-bottom: 1px solid #c5c5c5;
+        }
+
+        .cardFooter {
+            text-align: center;
+            padding:10px;
+            i {
+                padding:0 5px;
+            }
+        }
+
+        .blue{
+            color:rgb(31, 105, 216);
+        }
+
+        .green{
+            color:rgb(47, 201, 81);
+        }
+
+        .sky{
+            color:rgb(33, 123, 146);
+        }
+    }
+}
+
+.design6{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .bgCard{
+        width:450px;
+        background-image: url("../assets/profile-image.webp");
+        background-size: cover;  
+        color:#fff; 
+        border-radius: 5px;
+
+        .bgCardHeader{
+            padding:5px 10px;
+            border-bottom: 1px solid #c5c5c5;
+        }
+
+        .bgCardMain{
+            padding:5px 10px;
+            border-bottom: 1px solid #c5c5c5;
+            .bgCardInfo{
+                font-size:20px;
+            }
+        }
+        .bgCardFooter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                padding:0px 10px;
+            }
+        }
+    }
+}
+
+.design7{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .ImageHeaderCard{
+        width:500px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px rgba(65, 65, 65, 0.5);
+
+        img {
+            width:100%;
+            height: 250px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        h3 {
+            padding:0 10px;
+            font-size: 24px;
+            color:#272727;
+        }
+
+        .imageHeaderCardDescription{
+            padding:0 10px;
+            color:#8b8b8b;
+        }
+
+        .imageHeaderCardStatus {
+            padding: 10px;
+            font-size:18px;
+        }
+    }
+}
+
+.design8 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .ImageHeaderCardVariant{
+        width:500px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 1px 2px 3px rgba(65, 65, 65, 0.5);
+
+        img{
+            width: 100%;
+            height: 350px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        h3 {
+            padding:0 10px 20px 10px;
+            font-size: 24px;
+            color:#272727;
+            border-bottom: 1px solid #c5c5c5;
+        }
+        .imageHeaderCardVariantDescription{
+            padding:0 10px 10px 10px;
+            color:#8b8b8b;
+            border-bottom: 1px solid #c5c5c5;
+        }
+        .imageHeaderCardVariantStatus{
+            padding:10px 20px;
+            font-size:18px;
+        }
+    }
+}
+
+//design 9
+@media (max-width: 768px) {
+    .design9 {
+        width: 100%;
+        display: grid;
+        padding: 20px;
+        gap: 20px;
+    
+        .horizontalCard{
+            background-color: #fff;
+            box-shadow: 1px 2px 3px rgba(65, 65, 65, 0.5);
+            img{
+                width: 150px;
+                height: 100%;
+            }
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+                padding: 0px 10px 10px 10px;
+                border-bottom: 1px solid #c5c5c5;
+            }
+            .horizontalCardDescription{
+                padding:10px;
+                color:#8b8b8b;
+                border-bottom: 1px solid #c5c5c5;
+            }
+            .horizontalCardStatus{
+                padding:10px;
+                font-weight: 500;
+            }
+        }
+        .alignLeft {
+            display: flex;
+        }
+        .alignRight {
+            display:flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .design9 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 20px;
+    
+        .horizontalCard{
+            background-color: #fff;
+            box-shadow: 1px 2px 3px rgba(65, 65, 65, 0.5);
+            img{
+                width: 150px;
+                height: 100%;
+            }
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+                padding: 0px 10px 10px 10px;
+                border-bottom: 1px solid #c5c5c5;
+            }
+            .horizontalCardDescription{
+                padding:10px;
+                color:#8b8b8b;
+                border-bottom: 1px solid #c5c5c5;
+            }
+            .horizontalCardStatus{
+                padding:10px;
+                font-weight: 500;
+            }
+        }
+        .alignLeft {
+            display: flex;
+        }
+        .alignRight {
+            display:flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+
+.design10 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .loginForm {
+        background-color: #fff;
+        padding:40px;
+        border-radius:4px;
+        box-shadow: 1px 1px 1px rgba(163, 163, 163, 0.5);
+        width: 400px;
+        text-align: center;
+        .formTitle {
+            color:rgb(32, 136, 206);
+            font-weight: 500;
+        }
+        .titleText{
+            color:rgb(158, 158, 158);
+        }
+        .usernameLabel{
+            display: block;
+            font-weight: 500;
+            text-align: left;
+        }
+        .passwordInput{
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none ;
+                color:#8a8a8a;
+            }
+            label{
+                font-weight: 500;
+            }
+        }
+        #username, #password{
+            margin:5px 0;
+            width: 100%;
+            padding:8px;
+            border-radius: 4px;
+            border: 1px solid rgb(161, 161, 161);
+        }
+        .remberMeInput{
+            display: flex;
+            font-weight: 500;
+        }
+        button{
+            margin:10px 0;
+            width: 100%;
+            padding:10px;
+            font-weight: 600;
+            color:#fff;
+            background-color: rgb(32, 136, 206);
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(163, 163, 163, 0.5);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(20, 99, 151);
+        }
+        .socialMedia{
+            display: flex;
+            justify-content: center;
+            i{
+                padding:15px;
+                color:#fff;
+                border-radius: 10px;
+                margin:0 5px;
+            }
+            .blue{
+                background-color: rgb(32, 136, 206);
+            }
+            .red{
+                background-color: rgb(206, 45, 45);
+            }
+            .sky{
+                background-color: rgb(16, 33, 37);
+            }
+        }
+    }
+    a{
+        font-weight: 600;
+        color:#41a0cc;
+    }
+}
