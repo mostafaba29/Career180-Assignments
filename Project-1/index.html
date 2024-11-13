@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/724244f32d.js" crossorigin="anonymous"></script>
+    <script> tailwind.config = {
+        theme:{
+            extend: {
+                colors:{
+                    primary:'#5271FF',
+                    back:'#292929',
+                }
+            }
+        }
+    }</script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <aside class="h-screen fixed col-2 flex flex-col items-center bg-white sidePanel z-50">
+            <img src="./assets/profile.png" alt="profile" class="rounded-full w-20 h-20 my-10 bg-primary">
+            <h2 class="font-bold text-xl">Mo-Emad</h2>
+            <p>Senior Software Engineer</p>
+            <div class="flex items-center justify around">
+                <i class="fa-brands fa-facebook p-2 border rounded-full m-1 text-primary"></i>
+                <i class="fa-brands fa-instagram p-2 border rounded-full m-1 text-primary"></i>
+                <i class="fa-brands fa-x-twitter p-2 border rounded-full m-1 text-primary"></i>
+                <i class="fa-brands fa-linkedin p-2 border rounded-full m-1 text-primary"></i>
+            </div>
+            <div class="h-[1px] bg-gray-100 w-full my-4"></div>
+            <div class="w-full p-2">
+                <a class="block p-1 w-full my-3 rounded hover:bg-primary hover:text-white " href="#aboutMe"><i class="fa-regular fa-user mx-1"></i>About Me</a>
+                <a class="block p-1 w-full my-3 rounded hover:bg-primary hover:text-white" href="#portofolio"><i class="fa-regular fa-clipboard mx-1"></i>Portfolio</a>
+                <a class="block p-1 w-full my-3 rounded hover:bg-primary hover:text-white" href="#letsWorkTogether"><i class="fa-solid fa-briefcase mx-1"></i>Services & Pricing</a>
+                <a class="block p-1 w-full my-3 rounded hover:bg-primary hover:text-white" href="#resume"><i class="fa-regular fa-file mx-1"></i>Resume</a>
+                <a class="block p-1 w-full my-3 rounded hover:bg-primary hover:text-white" href="#products"><i class="fa-solid fa-bag-shopping mx-1"></i>Products</a>
+                <a class="block p-1 w-full my-3 rounded hover:bg-primary hover:text-white" href="#blogs"><i class="fa-regular fa-newspaper mx-1"></i>Blog</a>
+                <a class="block p-1 w-full my-3 rounded hover:bg-primary hover:text-white" href="#contact"><i class="fa-regular fa-envelope mx-1"></i>Contact</a>
+            </div>
+        </aside>
+        <section class="row">
+            <div class="col-2 h-screen"></div>
+            <div id="aboutMe" class="h-screen flex justify-between col-10 my-[140px]"> 
+                <div >
+                    <h3 class="text-lg">HI, I'AM A FREELANCER</h3>
+                    <h1 class="text-primary text-5xl font-bold my-2">Developer</h1>
+                    <p >i'm a software engineer specializing in scalable we apps. </p>  
+                    <p class="mb-4">Explore my <a href="#" class="text-primary">blog</a>, <a href="#" class="text-primary">project portofolio</a> and 
+                        <a href="#" class="text-primary">online resume.</a>
+                    </p>
+                    <a href="#portofolio" class="bg-primary px-3 py-2 rounded-3xl text-white font-semibold m-1 hover:cursor-pointer"><i class="fa-solid fa-arrow-right"></i> View Portofolio</a>
+                    <a href="#resume" class="bg-zinc-800 px-3 py-2 rounded-3xl text-white font-semibold m-1 hover:cursor-pointer"><i class="fa-regular fa-file"></i></i> View Resume</a>
+
+                    <div class="stats flex items-center my-28">
+                        <h3 class="text-primary font-bold text-5xl p-1 m-1">5</h3>
+                        <div class="w-[1px] h-8 m-1 bg-primary"></div>
+                        <div>
+                        <p class="mx-1">Years of </p>
+                        <p class ="mx-1">Experience</p>
+                        </div>  
+                        <h3 class="text-primary font-bold text-5xl p-1 m-1">110</h3>
+                        <div class="w-[1px] h-8 m-1 bg-primary"></div>
+                        <div>
+                            <p class="mx-1">Projects </p>
+                            <p class ="mx-1">Completed</p>
+                            </div>
+                        <h3 class="text-primary font-bold text-5xl p-1 m-1">6K</h3>
+                        <div class="w-[1px] h-8 m-1 bg-primary"></div>
+                        <div>
+                            <p class="mx-1">Clients</p>
+                            <p class ="mx-1">Worldwide</p>
+                            </div>
+                    </div>
+                </div>
+                <img src="./assets/user.jpg" alt="userImage" class="w-[300px] h-[400px]">
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-2 h-screen"></div>
+            <div id="portofolio" class=" h-screen col-10">
+                <div class="flex items-end justify-between gap-[680px]">
+                    <div>
+                        <div class="flex items-center">
+                            <div class="w-1 h-10 m-1 bg-primary"></div>
+                            <h3 class="text-4xl font-semibold">What I do</h3>
+                        </div>
+                        <p>I have more than 10 years' experience building software for clients all over the world.Below is a quick overview 
+                            of my main techincal skill sets and technologits i use. Want to find out more about
+                            of my main experince? Check out my <a href="#" class="text-primary">online resume</a> and <a href="#" class="text-primary">project portofolio</a>
+                        </p>
+                    </div>
+                    <a href="#letsWorkTogether" class="bg-primary text-center p-2 rounded-3xl text-white font-semibold m-1 w-[570px]"><i class="fa-solid fa-arrow-right"></i> Services & Pricing</a>
+                </div>
+                <div class="cardsContainer my-5 grid grid-cols-4 gap-8 justify-items-center mx-2">
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <img class="mb-4" src="./assets/js.png" alt="js">
+                        <h4 class="font-semibold my-2">Vanilla JavaScript</h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <div class="flex items-center gap-2">
+                            <img class="mb-4" src="./assets/angular.png" alt="anglular">
+                            <img class="mb-4" src="./assets/react.png" alt="react">
+                            <img class="mb-4" src="./assets/vue.png" alt="vue">
+                        </div>
+                        <h4 class="font-semibold my-2">Angular, React & Vue</h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <img class="mb-4" src="./assets/node.png" alt="node.js">
+                        <h4 class="font-semibold my-2">Node.js</h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <img class="mb-4" src="./assets/python.png" alt="node.js">
+                        <h4 class="font-semibold my-2">Python & Django</h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <img class="mb-4" src="./assets/php.png" alt="node.js">
+                        <h4 class="font-semibold my-2">PHP</h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <div class="flex items-center gap-2">
+                            <img class="mb-4" src="./assets/npm.png" alt="npm">
+                            <img class="mb-4" src="./assets/gulp.png" alt="gulp">
+                            <img class="mb-4" src="./assets/grunt.png" alt="grunt">
+                        </div>
+                        <h4 class="font-semibold my-2">npm, gulp & Grunt</h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <div class="flex items-center gap-2">
+                            <img class="mb-4" src="./assets/html.png" alt="npm">
+                            <img class="mb-4" src="./assets/css.png" alt="gulp">
+                        </div>
+                        <h4 class="font-semibold my-2">HTML & CSS</h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                    <div class="bg-gray-100 p-[35px] border-1 border-gray-300 w-[300px]">
+                        <div class="flex items-center gap-2">
+                            <img class="mb-4" src="./assets/sass.png" alt="npm">
+                            <img class="mb-4" src="./assets/less.png" alt="gulp">
+                        </div>
+                        <h4 class="font-semibold my-2">Sass & LESS </h4>
+                        <p class="text-back">List skills and technologies here , Customize as needed. build on HTML5,Sass and Bootstrap5.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-2"></div>
+            <div id="letsWorkTogether" class="servicesAndPricing py-12 px-4 col-10 flex justify-between items-center">
+                <div>
+                    <h3 class="text-4xl text-white font-semibold">Let's Work together on </h3>
+                    <h3 class="text-4xl text-white font-semibold">your next Project</h3>
+                    <p class="text-white my-1">I am available for freelance projects. Hire me and get your project done.</p>
+                </div>
+                <a href="contactForm" class="bg-primary text-center px-3 py-2 rounded-3xl text-white font-semibold m-1 "><i class="fa-solid fa-arrow-right"></i> Let's get in touch</a>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-2 h-screen"></div>
+            <div id="resume" class="h-screen col-10 ">
+                <div class="flex items-end justify-between gap-[680px] mt-8">
+                    <div>
+                        <div class="flex items-center">
+                            <div class="w-1 h-10 m-1 bg-primary"></div>
+                            <h3 class="text-4xl font-semibold">Featured Projects</h3>
+                        </div>
+                        <p>My step-by-step guide ensures a smoothe project journey, from the initial consulation to the final delievery. i take care of every detail, allowing you to focus on what you do best.
+                        </p>
+                    </div>
+                    <a href="#portofolio" class="bg-primary p-2 rounded-3xl text-white font-semibold m-1 w-[320px] text-center"><i class="fa-solid fa-arrow-right"></i> View Portfolio</a>
+                </div>
+                <div class="projectsContainer grid grid-cols-2 gap-4 justify-items-center">
+                    <div>
+                        <img class="w-full h-[320px]" src="./assets/project1.png" alt="project-1">
+                        <div class="flex items-center justify-between">
+                            <div class="mt-3">
+                                <p class="inline border p-2 rounded-3xl">React JS</p>
+                                <p class="inline border p-2 rounded-3xl">gsap</p>
+                                <p class="inline border p-2 rounded-3xl">Web Development</p>
+                                <h4 class="font-semibold text-xl mt-2">Crypto Website Development for Defi X</h4>
+                            </div>
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-gray-300 p-3 rounded-full"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full h-[320px]" src="./assets/project2.png" alt="project-1">
+                        <div class="flex items-center justify-between">
+                            <div class="mt-3">
+                                <p class="inline border p-2 rounded-3xl">React JS</p>
+                                <p class="inline border p-2 rounded-3xl">gsap</p>
+                                <p class="inline border p-2 rounded-3xl">Web Development</p>
+                                <h4 class="font-semibold text-xl mt-2">Salesforce CRM - Ivoice Management</h4>
+                            </div>
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-gray-300 p-3 rounded-full"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full h-[320px]" src="./assets/project3.png" alt="project-3">
+                        <div class="flex items-center justify-between">
+                            <div class="mt-3">
+                                <p class="inline border p-2 rounded-3xl">React JS</p>
+                                <p class="inline border p-2 rounded-3xl">gsap</p>
+                                <p class="inline border p-2 rounded-3xl">Web Development</p>
+                                <h4 class="font-semibold text-xl mt-2">Car Rental App</h4>
+                            </div>
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-gray-300 p-3 rounded-full"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full h-[320px]" src="./assets/project4.png" alt="project-1">
+                        <div class="flex items-center justify-between">
+                            <div class="mt-3">
+                                <p class="inline border p-2 rounded-3xl">React JS</p>
+                                <p class="inline border p-2 rounded-3xl">gsap</p>
+                                <p class="inline border p-2 rounded-3xl">Web Development</p>
+                                <h4 class="font-semibold text-xl mt-2">Financial management</h4>
+                            </div>
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-gray-300 p-3 rounded-full"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-2 h-screen"></div>
+            <div id="products" class=" h-screen col-10  mt-16">
+                <div class="flex items-end justify-between gap-[680px] my-16">
+                    <div>
+                        <div class="flex items-center">
+                            <div class="w-1 h-10 m-1 bg-primary"></div>
+                            <h3 class="text-4xl font-semibold">Lastest Blog Posts</h3>
+                        </div>
+                        <p>More than 1500+ agencies using Portfolify
+                        </p>
+                    </div>
+                    <a class="bg-primary p-2 rounded-3xl text-white font-semibold m-1 w-[320px] text-center"><i class="fa-solid fa-arrow-right"></i> See All Articles</a>
+                </div>
+                <div id="blogs" class="grid grid-cols-3 gap-3 p-4">
+                    <div>
+                        <img src="./assets/blog1.png" alt="blogPost1">
+                        <p class="m-2">March 18,2024 <em class="text-primary font-bold">/</em> Articles</p>
+                        <h4 class="mx-2 font-semibold text-2xl text-balance">7 Great Web Development Languages to Learn this Year</h4>
+                    </div>
+                    <div>
+                        <img src="./assets/blog2.png" alt="blogPost2">
+                        <p class="m-2">March 18,2024 <em class="text-primary font-bold">/</em> Tutorials</p>
+                        <h4 class="mx-2 font-semibold text-2xl text-balance">How to Optimize your Website for Better Performance</h4>
+                    </div>
+                    <div>
+                        <img src="./assets/blog3.png" alt="blogPost3">
+                        <p class="m-2">March 18,2024 <em class="text-primary font-bold">/</em> Articles</p>
+                        <h4 class="mx-2 font-semibold text-2xl text-balance">8 Tips to Improve your Web Development Skills in 2024</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-2 h-screen"></div>
+            <div id="contact" class=" h-screen col-10">
+                <div class="my-16">
+                    <div class="flex items-center">
+                        <div class="w-1 h-10 m-1 bg-primary"></div>
+                        <h3 class="text-4xl font-semibold">Contact Details</h3>
+                    </div>
+                    <p >If you are going to use a passage of Lorem Ipsum,</p>
+                    <p>you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                </div>
+                <div class="flex items-center justify-between p-2">
+                    <div class="flex items-center">
+                        <div class="w-1 h-20 m-1 bg-primary/50"></div>
+                        <i class="fa-solid fa-mobile fa-2xl text-primary p-2"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold mx-1">Phone</h3>
+                            <p class="text-back">+123-456-789</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-1 h-20 m-1 bg-primary/50"></div>
+                        <i class="fa-solid fa-compass fa-2xl text-primary mx-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold mx-1">Location</h3>
+                            <p class="text-back">123 Example Street, city, Country</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-1 h-20 m-1 bg-primary/50"></div>
+                        <i class="fa-solid fa-envelope-open text-primary mx-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold mx-1">Email</h3>
+                            <p class="text-back">yourmail@domain.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full p-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7195.256885818543!2d16.841184191319773!3d63.20169332744794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46652e3584f207dd%3A0xc5293913e6e922f0!2s882%2093%20Gux%C3%A5s%2C%20Sweden!5e0!3m2!1sen!2seg!4v1731487853528!5m2!1sen!2seg" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-2 h-screen"></div>
+            <div id="contactForm" class=" h-screen col-10 ">
+                <div class="my-16">
+                    <div class="flex items-center">
+                        <div class="w-1 h-10 m-1 bg-primary"></div>
+                        <h3 class="text-4xl font-semibold">Get In Touch</h3>
+                    </div>
+                    <p >If you are going to use a passage of Lorem Ipsum,</p>
+                    <p>you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                </div>
+                <form action="submit" class="w-full m-2 p-5 border border-gray-300 rounded-2xl">
+                    <div class="grid grid-cols-2 gap-2 justify items-center">
+                        <div class="w-full">
+                            <i class="fa-solid fa-id-card relative top-0 left-10 text-primary"></i>
+                            <input type="text" placeholder="Name*" class="w-[90%] pl-10 py-2 pr-2 m-2 border border-gray-300 rounded-2xl">
+                        </div>
+                        <div class="w-full">
+                            <i class="fa-solid fa-envelope relative top-0 left-10 text-primary"></i>
+                            <input type="email" placeholder="Email*" class="w-[90%] pl-10 py-2 pr-2 m-2 border border-gray-300 rounded-2xl">
+                        </div>
+                        <div class="w-full">
+                            <i class="fa-solid fa-mobile relative top-0 left-10 text-primary"></i>
+                            <input type="text" placeholder="Phone*" class="w-[90%] pl-10 py-2 pr-2 m-2 border border-gray-300 rounded-2xl">
+                        </div>
+                        <div class="w-full">
+                            <i class="fa-solid fa-location-dot relative top-0 left-10 text-primary"></i>
+                            <input type="text" placeholder="Location*" class="w-[90%] pl-10 py-2 pr-2 m-2 border border-gray-300 rounded-2xl">
+                        </div>
+                    </div>
+                    <textarea name="Your Message" id="" cols="170" rows="5" placeholder="Message*" class="mx-4 p-2 my-2 border border-gray-300 rounded-2xl"></textarea>
+                    <div class="flex items-center mx-4">
+                        <input type="checkbox" name="check" id="" class="w-5 h-5 m-2">
+                        <label for="check" class="text-gray-500">Save my name, email and wevsite in this browser for the next time</label>
+                    </div>
+                    <button class="block bg-primary text-white font-semibold px-3 py-2 mx-4 my-1 rounded-3xl">Send Message</button>
+                </form>
+                <p class="font-semibold w-full text-center">Copyright &copy; 2024 BootCamp. All Rights Reserved</p>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
